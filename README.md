@@ -8,7 +8,6 @@ This repository contains my solutions to Data Structures and Algorithms problems
 
 ## 👨‍💻 About Me
 
-- 🎯 Goal: Crack top product-based companies by 2028
 - 💻 Language: C++
 - 📚 Platform: LeetCode
 - 🌱 Currently Learning: Data Structures & Algorithms
