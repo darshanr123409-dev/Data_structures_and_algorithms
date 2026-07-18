@@ -1,4 +1,4 @@
-# 🚀 Data Structures and Algorithms
+# 🚀 Data Structures and Algorithms 
 
 Welcome to my DSA repository!
 
@@ -28,7 +28,7 @@ This repository contains my solutions to Data Structures and Algorithms problems
 ## 📂 Folder Structure
 
 ```
-Data_structures_and_algorithms/
+Data_structures_and_algorithms Topic/
 │
 ├── array/
 ├── binary_search/
