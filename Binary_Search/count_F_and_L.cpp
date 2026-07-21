@@ -2,14 +2,14 @@
 using namespace std;
 
 int First_Occurence(vector<int> &arr,int n,int target){
-    int first=-1;
+    int first=-1;  
     int low=0;
     int high=n-1;
     while(low<=high){
         int mid=(low+high)/2;
         if(arr[mid]==target){ // <-------
             first=mid;
-            high=mid-1;
+            high=mid-1; 
         }
         else if(arr[mid]<target){
             low=mid+1;

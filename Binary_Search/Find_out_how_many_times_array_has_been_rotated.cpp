@@ -4,7 +4,7 @@
 using namespace std;
 
 
-int  Minimum_in_Rotated_Sorted_Array(vector<int> &arr, int n) {
+int  find_how_many_times_in_Rotated_Sorted_Array(vector<int> &arr, int n) {
         int low = 0, high = n - 1;
         int ans = INT_MAX;
         int index=-1;
