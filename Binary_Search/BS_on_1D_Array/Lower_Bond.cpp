@@ -4,7 +4,7 @@ using namespace std;
 int Lower_bond(vector<int> &arr,int target){
     int n=arr.size();
     int ans=n;
-    int low=0;   //   Tc= O(n log n)
+    int low=0;   //   Tc= O(log n)
     int high=n-1;  //  Sc =O(1)
     while(low<=high){
         int mid=(low+high)/2;

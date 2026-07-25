@@ -35,7 +35,7 @@ bool canPlace(vector<int>& stalls, int cows, int d) {
         // Apply binary search
         while (low <= high) {
             // Find mid distance
-            int mid = low + (high - low) / 2;
+            int mid = (high + low) / 2;
 
             // If placing cows is possible with mid distance
             if (canPlace(stalls, cows, mid)) {
