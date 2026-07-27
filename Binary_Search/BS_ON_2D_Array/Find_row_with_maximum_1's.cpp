@@ -46,7 +46,7 @@ int rowWithMax1s(vector<vector<int>> &matrix, int n, int m) {
     for (int i = 0; i < n; i++) {
         // m=number od colums 
         int cnt_ones = m - lower_bond(matrix[i], m, 1); // ans =3
-            // 5 -3=3
+            // 5 -3=2
         if (cnt_ones > cnt_max) {
             cnt_max = cnt_ones;
             index = i;
