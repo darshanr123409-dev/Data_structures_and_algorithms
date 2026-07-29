@@ -15,7 +15,7 @@ public:
         for (auto it : freq) {
             arr.push_back({it.first, it.second});
         }
-
+                                 // this is a lamda finction
         sort(arr.begin(), arr.end(), [](auto &a, auto &b) {
             return a.second > b.second;
         });
