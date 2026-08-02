@@ -11,8 +11,8 @@ vector<int> Majority_element_3(vector<int> &arr){
 
     for(auto i =0; i<n;i++){
         mapp[arr[i]]++;
-        if(mapp[arr[i]]==mm){
-            ls.push_nack(arr[i]);
+        if(mapp[arr[i]]==min){
+            ls.push_back(arr[i]);
         }
         if(ls.size()==2) {
             break;
