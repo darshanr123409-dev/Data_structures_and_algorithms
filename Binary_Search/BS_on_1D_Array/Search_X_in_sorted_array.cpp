@@ -20,7 +20,7 @@ using namespace std;
 // }
 
 // Recursive Binary Search 
-// Tc = O(n log n)
+// Tc = O(log n)
 // Sc = O(1)
 int BinarySearch(vector<int> &arr, int low, int high, int target) {
 
