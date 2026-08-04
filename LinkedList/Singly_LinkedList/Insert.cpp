@@ -124,7 +124,7 @@ int main(){
     // Convert array to linked list
     Node* head = Convert_to_Array_to_LL(arr);
 
-    cout << "Before Deleting Head: ";
+    cout << "Before Inserting Head: ";
     printLL(head);
 
     //Insert to head
@@ -139,7 +139,7 @@ int main(){
     // Insert in element before the values
     head = Insert_Before_value(head,4,6);
 
-    cout << "After Deleting Head: "; 
+    cout << "After Inserting Head: "; 
     printLL(head);
 
     return 0;
