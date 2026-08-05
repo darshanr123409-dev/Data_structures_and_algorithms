@@ -1,10 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 // Insert a node in LL
-// ✅ Delete Head
-// ✅ Delete Tail
-// ✅ Delete at Position
-// ✅ Delete by Value
+// ✅ Insert Head
+// ✅ Insert Tail
+// ✅ Insert at Position
+// ✅ Insert by Value
 
 // self Node Structure
 struct Node{

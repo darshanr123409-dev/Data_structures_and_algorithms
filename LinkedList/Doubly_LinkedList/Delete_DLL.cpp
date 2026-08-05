@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Delete a node in DLL
+// ✅ Delete Head
+// ✅ Delete Tail
+// ✅ Delete at Position
+// ✅ Delete Node
+
 struct Node { // self define data types
     int data;
     Node* next;
@@ -77,7 +83,7 @@ Node* Delete_Kth_Element(Node* head , int k){
             break;
         Kth_temp = Kth_temp->next;
     }
-    if (Kth_temp == nullptr)
+     if(Kth_temp == nullptr)
         return head;
 
 
@@ -105,6 +111,29 @@ Node* Delete_Kth_Element(Node* head , int k){
     return head;
 
 }
+
+void Delete_Node_DLL(Node* temp) {
+    if (temp == nullptr)
+        return;
+
+    Node* pre = temp->back;
+    Node* front = temp->next;
+
+    if (pre == nullptr) {
+        // This function shouldn't be used to delete the head.
+        return;
+    }
+
+    if (front == nullptr) {
+        pre->next = nullptr;
+    } else {
+        pre->next = front;
+        front->back = pre;
+    }
+
+    delete temp;
+}
+
 void print(Node* head){
 
     while(head != nullptr){
@@ -126,9 +155,12 @@ int main(){
     head = Delete_last_DLL(head);
 
     // Delete Kth Element
-    head = Delete_Kth_Element(head,2);
+    // head = Delete_Kth_Element(head,2);
 
-    cout<<endl<<"Before Deleting DLL :";
+    // Delete  Node
+    Delete_Node_DLL(head->next->next->next);
+
+    cout<<endl<<"After Deleting DLL :";
     print(head);
 
     return 0;
