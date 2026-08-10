@@ -12,7 +12,6 @@ struct ListNode {
     }
 };
 
-
 class Solution {
 public:
 
