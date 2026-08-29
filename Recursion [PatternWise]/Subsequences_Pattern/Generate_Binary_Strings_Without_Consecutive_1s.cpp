@@ -1,30 +1,36 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Solution class
 class Solution {
 public:
-    vector<string> result;
 
-    // Helper function to generate strings
-    void backtrack(string s, int n, char prev) {
-        // If string reaches length n, add to result
+    void solve(int n, string &s, vector<string> &ans) {
+
         if (s.length() == n) {
-            result.push_back(s);
+            ans.push_back(s);
             return;
         }
-        // Add '0' and recurse
-        backtrack(s + "0", n, '0');
-        // Add '1' only if previous char is not '1'
-        if (prev != '1') {
-            backtrack(s + "1", n, '1');
+
+        // Add 0
+        s.push_back('0');
+        solve(n, s, ans);
+        s.pop_back();
+
+        // Add 1 only when previous character is 0
+        if (s.empty() || s.back() == '0') {
+            s.push_back('1');
+            solve (n, s, ans);
+            s.pop_back();
         }
     }
 
-    // Main function
     vector<string> generateBinaryStrings(int n) {
-        result.clear();
-        backtrack("", n, '0');
-        return result;
+
+        vector<string> ans;
+        string s;
+
+        solve(n, s, ans);
+
+        return ans;
     }
 };
